@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Table | OceaVia</title>
+        <link rel="icon" type="image/png" href="images/No-text-logo.png">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/table.css">
+    </head>
+
+    <body>
+        <header class="navbar">
+            <div class="logo" onclick="window.location.href='home.html'">
+                <img src="images/logo.png" alt="OceaVia logo">
+            </div>
+            <nav> <!--Navigation bar-->
+                <a href="table.html" class="active">Data</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="sitemap.html">SiteMap</a>
+                <a href="team.html">Team</a>
+                <button class="profile-btn" onclick="window.location.href='profile.html';">Profile</button>
+            </nav> <!--Closing the navigation bar-->
+        </header>
+        
+        <main>
+            <h2>
+                Threatened Marine Species
+            </h2>
+
+            <!--Creating the Table-->
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">
+                            <img src="images/logo.png" alt="Index" class="table-logo">
+                        </th>
+                        <th rowspan="2">Species</th>
+                        <th colspan="2">Status Info</th>
+                        <th rowspan="2">Action</th>
+                    </tr>
+                    <tr>
+                        <th>Risk</th>
+                        <th>Region</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="critical">
+                        <td>1</td>
+                        <td>Hawksbill Sea Turtle</td>
+                        <td><span class="risk-badge critical">Critical</span></td>
+                        <td>Tropical oceans (Caribbean, Indo-Pacific)</td>
+                        <td><a href="https://www.iucnredlist.org/species/8005/12881238" target="blank">Read more</a></td>
+                    </tr>
+                    <tr class="critical">
+                        <td>2</td>
+                        <td>Oceanic Whitetip Shark</td>
+                        <td><span class="risk-badge critical">Critical</span></td>
+                        <td>Tropical & subtropical oceans worldwide</td>
+                        <td><a href="https://www.iucnredlist.org/species/39374/2911619" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="critical">
+                        <td>3</td>
+                        <td>Vaquita</td>
+                        <td><span class="risk-badge critical">Critical</span></td>
+                        <td>Gulf of California, Mexico</td>
+                        <td><a href="https://www.iucnredlist.org/species/17028/9883166" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="critical">
+                        <td>4</td>
+                        <td>North Atlantic Right Whale	</td>
+                        <td><span class="risk-badge critical">Critical</span></td>
+                        <td>TNorth Atlantic Ocean</td>
+                        <td><a href="https://www.iucnredlist.org/species/41712/50380859" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="critical">
+                        <td>5</td>
+                        <td>Nassau Grouper</td>
+                        <td><span class="risk-badge critical">Critical</span></td>
+                        <td>Caribbean Sea and Western Atlantic</td>
+                        <td><a href="https://www.iucnredlist.org/species/7862/46909843" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="endangered">
+                        <td>6</td>
+                        <td>Atlantic Bluefin Tuna</td>
+                        <td><span class="risk-badge endangered">Endangered</span></td>
+                        <td>North Atlantic & Mediterranean Sea</td>
+                        <td><a href="https://www.iucnredlist.org/species/21860/9331546" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="endangered">
+                        <td class="wheale">7</td>
+                        <td class="wheale">Blue Whale</td>
+                        <td class="wheale"><span class="risk-badge endangered">Endangered</span></td>
+                        <td class="wheale">All major oceans globally</td>
+                        <td class="wheale"><a href="https://www.iucnredlist.org/species/2477/156923585" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="vulnerable">
+                        <td>8</td>
+                        <td>Leatherback Sea Turtle	</td>
+                        <td><span class="risk-badge vulnerable">Vulnerable</span></td>
+                        <td>Tropical & temperate oceans</td>
+                        <td><a href="https://www.iucnredlist.org/species/6494/43526147" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="vulnerable">
+                        <td>9</td>
+                        <td>Giant Clam</td>
+                        <td><span class="risk-badge vulnerable">Vulnerable</span></td>
+                        <td>Indo-Pacific coral reefs</td>
+                        <td><a href="https://www.iucnredlist.org/species/21860/9331546" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="critical">
+                        <td>10</td>
+                        <td>Scalloped Hammerhead Shark</td>
+                        <td><span class="risk-badge critical">Critical</span></td>
+                        <td>Warm coastal and offshore tropical seas</td>
+                        <td><a href="https://www.iucnredlist.org/species/39385/2918526" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="near">
+                        <td>11</td>
+                        <td>Green Sea Turtle</td>
+                        <td><span class="risk-badge near">Near Threatened</span></td>
+                        <td>Tropical & subtropical oceans</td>
+                        <td><a href="https://www.iucnredlist.org/species/4615/11037468" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="near">
+                        <td>12</td>
+                        <td>Dugong</td>
+                        <td><span class="risk-badge near">Near Threatened</span></td>
+                        <td>Shallow coastal waters (Indian & Pacific Oceans)</td>
+                        <td><a href="https://www.iucnredlist.org/species/6909/170102261" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="near">
+                        <td>13</td>
+                        <td>Whale Shark	</td>
+                        <td><span class="risk-badge near">Near Threatened</span></td>
+                        <td>Tropical oceans worldwide</td>
+                        <td><a href="https://www.iucnredlist.org/species/19488/23612174" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="near">
+                        <td>14</td>
+                        <td>Manta Ray (Reef Manta)</td>
+                        <td><span class="risk-badge near">Near Threatened</span></td>
+                        <td>Indo-Pacific coral reefs</td>
+                        <td><a href="https://www.iucnredlist.org/species/195459/69593770" target="_blank">Read more</a></td>
+                    </tr>
+                    <tr class="near">
+                        <td>15</td>
+                        <td>Japanese Eel	</td>
+                        <td><span class="risk-badge near">Near Threatened</span></td>
+                        <td>Western Pacific (Japan, China, Korea)</td>
+                        <td><a href="https://www.iucnredlist.org/species/166184/62273676" target="_blank">Read more</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="OceaVia Logo">
+                </div>
+
+                <div class="footer-about">
+                    <h3>About OceaVia</h3>
+                    <p>
+                        This website was created as part of a group coursework project to raise awareness about marine plastic pollution and support the goals of UN SDG 14: Life Below Water.
+                    </p>
+                </div>
+
+                <div class="footer-about">
+                    <h4>Page Editors</h4>
+                    <p>
+                        <a href="PageEditor_ST2.html">Student 2</a>
+
+                    </p>
+
+                    <h4>Content Pages</h4>
+                    <p>
+                        <a href="content_ST2.html">Content 2</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Team G4-Group3. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

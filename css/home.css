@@ -1,0 +1,291 @@
+.hero-video{
+    position: relative; /* Positions the video relative to its container */
+    height: 100vh; /* Sets the height of the video to fill the viewport */
+    overflow: hidden; /* Hides any overflow content */
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+}
+
+.top {
+    padding: 10px;
+    background-color: slateblue;
+    max-width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 100;
+}
+
+.top a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.hero-video video{
+    position: absolute; /* Positions the video absolutely within the hero section */
+    top: 0; /* Aligns the video to the top of the hero section */
+    left: 0; /* Aligns the video to the left of the hero section */
+    width: 100%; /* Makes the video cover the entire hero section */
+    height: 100%; /* Makes the video cover the entire hero section */
+    object-fit: cover; /* Ensures the video covers the entire hero section without stretching */
+    z-index: 0; /* Places the video behind the content */
+}
+
+.hero-overlay-content {
+    position: relative; /* Positions the content relative to the hero section */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Arranges children in a column */
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers the content vertically */
+    padding: 20px; /* Adds padding around the content */
+}
+
+.hero-overlay-content h1 {
+    font-size: 3rem; /* Sets the font size for the heading */
+    font-weight: bold; /* Sets the font weight for the heading */
+    background: linear-gradient(90deg, #00d5ff, #02a1fd); /* Adds a gradient background to the heading */
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: text; /* Clips the background to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text color transparent to show the gradient */
+    text-shadow: 2px 2px 2px 2px #000; /* Adds a shadow effect to the text */
+    margin-bottom: 24px; /* Adds space below the heading */
+}
+
+.video-overlay{
+    position: absolute; /* Centers the overlay text */
+    top: 50%; /* Vertically centers the text */
+    left: 25%; /* Horizontally centers the text */
+    transform: translate(-50%, -50%); /* Adjusts the position to truly center the text */
+    font-size: 3rem; /* Sets the font size for the overlay text */
+    font-weight: bold; /* Sets the font weight for the overlay text */
+    background: linear-gradient(90deg, #00b4d8, #0077b6); /* Adds a gradient background to the overlay text */
+    text-shadow: 2px 2px 2px 2px #000;  /* Adds a shadow effect to the overlay text */
+    -webkit-background-clip: text;  /* Clips the background to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text color transparent to show the gradient */
+    text-align: center; /* Centers the text */
+    z-index: 2; /* Places the overlay above the video */ 
+}
+
+.content-navigation {
+    position: relative; /* Positions the navigation relative to its container */
+    z-index: 1; /* Places the navigation above the video */
+}
+
+.content-navigation {
+    background: white; /* Sets the background color of the navigation */
+    padding: 80px 20px; /* Adds padding around the navigation */
+    text-align: center; /* Centers the text in the navigation */
+}
+
+.content-navigation h2 {
+    margin-bottom: 8px; /* Adds space below the heading */
+    font-size: 48px; /* Sets the font size of the heading */
+    color: #0077b6; /* Sets the color of the heading */
+}
+
+.mission-text h1 {
+    font-weight: bold;
+    color: #0077b6;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.mission-text p{
+    font-weight: 500;
+    color: darkslategrey;
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    padding: 0px 120px;
+}
+
+.mission-text b{
+    text-shadow:2px 3px 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+}
+
+.nav-dis {
+    font-size: 18px; /* Sets the font size of the navigation links */
+    color: gray; /* Sets the color of the navigation links */
+    margin-bottom: 32px; /* Adds space below the navigation links */
+}
+
+.home-card-grid {
+    display: grid; /* Uses flexbox for layout */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; /* Adds space between the items */
+    max-width: 1200px; /* Sets a maximum width for the grid */
+    margin: 0 auto; /* Centers the grid within its container */
+    padding: 20px; /* Adds padding around the grid */
+}
+
+.home-card {
+    flex: 1 1 250px; /* Allows the card to grow and shrink, with a base width of 250px */
+    max-width: 800px; /* Sets a maximum width for each card */
+    aspect-ratio: 16/ 9; /* Maintains a 16:9 aspect ratio for the card */
+    border-radius: 16px; /* Rounds the corners of the card */
+    overflow: hidden; /* Hides any overflow content */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    position: relative; /* Positions the card relative to its container */
+    height: 300px; /* Sets a fixed height for the card */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Arranges children in a column */
+    justify-content: flex-end; /* Aligns children to the bottom of the card */
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth transition for hover effects */
+}
+
+.home-card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Makes the image cover the entire card */
+    height: 100%; /* Makes the image cover the entire card */
+    object-fit: cover; /* Ensures the image covers the card without stretching */
+    z-index: 1; /* Places the image behind the overlay */
+}
+
+.home-card-overlay {
+    position: absolute; /* Positions the overlay over the card */
+    top: 0; /* Aligns the overlay to the top of the card */
+    left: 0; /* Aligns the overlay to the left of the card */
+    width: 100%; /* Makes the overlay cover the entire card */
+    height: 100%; /* Makes the overlay cover the entire card */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)); /* Creates a gradient overlay */
+    z-index: 2; /* Places the overlay above the image */
+}
+
+.home-card-content {
+    position: relative; /* Positions the content relative to the card */
+    z-index: 3; /* Places the content above the overlay */
+    padding: 30px; /* Adds padding around the content */
+    color: white; /* Sets the text color to white */
+    text-align: left; /* Centers the text within the content */
+}
+
+.home-card-category {
+    opacity: 0; /* Hides the category text by default */
+    transform: translateY(10px); /* Moves the category text down slightly */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Adds a transition effect for opacity and transform */
+    color: rgba(255, 255, 255, 0.8); /* Sets the color of the category text */
+    font-size: 12px; /* Sets the font size for the category */
+    letter-spacing: 1px; /* Adds spacing between letters */
+    margin-bottom: 8px; /* Adds space below the category text */
+    font-weight: bold; /* Sets the font weight for the category text */
+    text-align: right;
+}
+
+.home-card-title {
+    font-size: 24px; /* Sets the font size for the title */
+    font-weight: 700; /* Sets the font weight for the title */
+    line-height: 1.2; /* Sets the line height for the title */
+    margin-bottom: 12px; /* Adds space below the title */
+}
+
+.home-card-description {
+    font-size: 14px; /* Sets the font size for the description */
+    color: rgba(255, 255, 255, 0.9); /* Sets the color of the description text */
+    line-height: 1.5; /* Sets the line height for the description */
+    margin-bottom: 20px; /* Adds space below the description */
+}
+
+.home-card-button {
+    background: transparent; /* Makes the button background transparent */
+    color: white; /* Sets the text color for the button */
+    border: 2px solid #3a6ea5; /* Adds a border to the button */
+    padding: 10px 20px; /* Adds padding around the button text */
+    border-radius: 25px; /* Rounds the corners of the button */
+    font-size: 14px; /* Sets the font size for the button text */
+    font-weight: 500; /* Sets the font weight for the button text */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: all 0.3s ease; /* Adds a smooth transition effect */
+    text-decoration: none; /* Removes underline from the button text */
+    display: inline-block; /* Makes the button an inline-block element */
+    backdrop-filter: blur(10px); /* Adds a blur effect to the button background */
+}
+
+.home-card-button:hover {
+    background: #3a6ea5; /* Changes the background color on hover */
+    color: white; /* Changes the text color on hover */
+    transform: translateY(-3px); /* Moves the button up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect on hover */
+}
+
+.home-card:hover ~ .home-card,
+.home-card:not(:hover):has(~ .home-card:hover) {
+    filter: blur(4px) brightness(0.6); /* Applies a blur and brightness effect to other cards */
+    transform: scale(0.9); /* Scales down the other cards */
+}
+
+.home-card:hover {
+    transform: scale(1.1) translateY(-10px); /* Scales up the hovered card and moves it up */
+    filter: brightness(1.1); /* Increases brightness of the hovered card */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5); /* Adds a shadow effect to the hovered card */
+    z-index: 10; /* Brings the hovered card to the front */
+}
+
+.home-card::before {
+    content: ''; /* Creates a pseudo-element for the card */
+    position: absolute; /* Positions the pseudo-element absolutely */
+    top: 0; /* Aligns the pseudo-element to the top of the card */
+    left: 0; /* Aligns the pseudo-element to the left of the card */
+    right: 0; /* Aligns the pseudo-element to the right of the card */
+    bottom: 0; /* Aligns the pseudo-element to the bottom of the card */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); /* Adds a gradient overlay */
+    z-index: 0; /* Places the pseudo-element behind the card content */
+    opacity: 0; /* Makes the pseudo-element invisible by default */
+    transition: opacity 0.3s ease; /* Adds a transition effect for opacity */
+}
+
+.home-card:hover .home-card-category{
+    opacity: 1; /* Makes the pseudo-element visible on hover */
+}
+
+.dive-in-button {
+    position: relative; /* Needed for pseudo-element positioning */
+    font-size: 1.8rem; /* Sets the font size for the button */
+    padding: 15px 40px; /* Adds padding around the button text */
+    border-radius: 35px; /* Rounds the corners of the button */
+    border: 3px solid #0077b6; /* Adds a border to the button */
+    background: transparent; /* Makes the button background transparent */
+    color: #0077b6; /* Sets the text color for the button */
+    font-weight: 700; /* Sets the font weight for the button text */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    overflow: hidden; /* Hides overflow of the filling */
+    transition: color 0.3s ease, transform 0.3s ease; /* Adds a transition effect for text color and transform */
+    z-index: 0; /* Places the button below the pseudo-element */
+}
+
+.dive-in-button::before {
+    content: ""; /* Creates a pseudo-element for the button */
+    position: absolute; /* Positions the pseudo-element absolutely */
+    bottom: 0; /* Aligns the pseudo-element to the bottom of the button */
+    left: 0; /* Aligns the pseudo-element to the left of the button */
+    width: 100%; /* Makes the pseudo-element cover the entire button */
+    height: 0%; /* Starts with zero height */
+    background: linear-gradient(180deg, #00b4d8, #0077b6); /* Adds a gradient background to the pseudo-element */
+    border-radius: 35px; /* Rounds the corners of the pseudo-element */
+    z-index: -1; /* Places the pseudo-element behind the button text */
+    transition: height 1.0s ease; /* Adds a transition effect for height */
+}
+
+.dive-in-button:hover::before {
+    height: 100%; /* Fills the button from bottom to top on hover */
+}
+
+.dive-in-button:hover {
+    color: white; /* Changes the text color to white on hover */
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    transition: color 0.3s ease, transform 0.3s ease; /* Adds a transition effect for text color and transform */
+}
+
+
+@media (max-width: 768px) {
+  .home-card-grid {
+    grid-template-columns: 1fr; /* Stack cards in one column */
+  }
+}

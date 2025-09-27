@@ -1,0 +1,156 @@
+.navlist {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+}
+
+.navlist a {
+	text-decoration: none;
+	color: GhostWhite;
+	font-weight: bold;	
+	font-size:16px;
+	transition: color 0.3s;
+}
+
+.navlist a:hover {
+    color: #3a6ea5;
+}
+
+body {
+    margin: 0;
+    margin-top: 110px;
+	background-color:#badaeb
+}
+
+main {
+    flex:3;
+    max-width: 100%;
+}
+
+.stud {
+	background-color: #3a6ea5; 
+	padding: 30px;
+	text-align: center;
+	border-radius: 10px;
+	margin: 0px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.stud h2 {
+	margin: 0;
+	font-size: 28px;
+	font-weight: bold;
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+aside {
+    flex: 1; 
+    background-color: #3a6ea5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+	color: GhostWhite;
+    max-width:300px;
+
+}
+
+aside h3{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+aside a{
+    text-decoration : none;
+    color: #bcceea;
+	font-weight: bold;	
+	font-size:16px;
+	transition: color 0.3s;
+}
+
+aside a:hover { 
+    color: #003049;
+    font-weight: bold;
+}
+
+aside ul{
+    padding-left: 20px;
+}
+
+aside li{
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px 30px ;
+    border-radius: 5px;
+    background-color: GhostWhite;
+    max-width: 100%;
+    line-height:1.6;
+    font-size: 16px;
+    color:#333;
+}
+section h2, section h3, section h4 {
+    margin-top:20px;
+    margin-bottom:15px;
+    color: #396692
+}
+
+/* Make sure paragraphs inside section have margin */
+section p {
+    margin-bottom: 1em;
+}
+
+/* Lists inside section get proper indent and spacing */
+section ul, section ol {
+    padding-left: 30px;
+    margin-bottom: 1em;
+}
+
+section li {
+    margin-bottom: 0.5em;
+}
+
+section code {
+    font-family: monospace;
+}
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+        
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #3a6ea5; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+.ref li{
+    list-style: none;
+    padding-bottom: 9px;
+}
+
+img{
+    width: 90%;
+}
+

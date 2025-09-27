@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Home | OceaVia</title> <!--Title of the page-->
+            <link rel="icon" type="image/png" href="images/No-text-logo.png">
+            <link rel="stylesheet" href="css/global.css">
+            <link rel="stylesheet" href="css/home.css">
+        </head>
+
+        <body>
+            <div id="top"></div>
+            <section class="hero-video">
+                <video autoplay muted loop playsinline>
+                    <source src="images/bg_video.mp4" type="video/mp4">
+                    Your browser does not support the video format.
+                </video>
+
+                <div class="hero-overlay-content">
+                    <h1>Beneath the calm surface, chaos is choking</h1>
+                    <button class="home-card-button dive-in-button" onclick="document.getElementById('mission').scrollIntoView({ behavior: 'smooth' })">
+                        Dive in
+                    </button>
+                </div>
+            </section>
+
+            <header class="navbar">
+                <div class="logo" onclick="window.location.href='home.html'">
+                    <img src="images/logo.png" alt="OceaVia logo">
+                </div>
+                <ul> <!--Navigation bar-->
+                    <li><a href="table.html">Data</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">SiteMap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <button class="profile-btn" onclick="window.location.href='profile.html';">Profile</button>
+                </ul> <!--Closing the navigation bar-->
+            </header>
+
+            <main>
+                <section id="mission">
+                    <div class="mission-text">
+                        <h1> Our Mission </h1>
+                        <p><b>Safeguarding the Heart of Our Blue Planet</b></p>
+                        <p>
+                            At OceaVia, we recognize that oceans are not just vast bodies of water—they are
+                             the lungs of our planet, the home to over 80% of all life, and the backbone of 
+                             Earth’s climate and food systems. Our mission is to protect and preserve marine
+                              ecosystems by driving awareness about the devastating impacts of plastic 
+                            pollution, rising sea temperatures, habitat destruction, and unsustainable 
+                              fishing practices. We believe that by educating people, especially the younger 
+                              generation, and empowering communities, we can ignite a wave of change that 
+                              helps secure a thriving, living ocean for the future.
+                        </p>
+                        <p><b>From Awareness to Action: Building a Sustainable Ocean Future</b></p>
+                        <p>
+                            Our mission goes beyond creating beautiful content—we aim to turn awareness into meaningful 
+                            action. OceaVia is a platform where knowledge meets responsibility. We strive to highlight 
+                            the beauty and fragility of marine life, amplify the voices of ocean advocates, and offer 
+                            real, practical steps individuals and organizations can take to reduce their marine 
+                            footprint. Whether it’s promoting reef-safe practices, supporting clean-up campaigns, or 
+                            pushing for stronger marine protection laws, we are committed to being a driving force 
+                            behind the global movement to achieve SDG 14.
+                        </p>
+                        <p><b>Uniting Science, Community, and Innovation for Ocean Conservation</b></p>
+                        <p>
+                            We envision a world where human progress and ocean conservation go hand in hand. 
+                            Through digital storytelling, collaborative research, and community engagement, 
+                            OceaVia brings together environmental science, youth leadership, and cutting-edge 
+                            innovation to build solutions that restore the balance between people and the sea. Our 
+                            mission is to inspire a generation that not only loves the ocean but also takes bold 
+                            action to defend it—because the ocean’s survival is our survival, and the time to act 
+                            is now.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-navigation"> <!--Grid of cards-->
+                    <h2>Explore More</h2>
+
+                    <div class="home-card-grid">
+                        <div class="home-card">
+                                <img src="images/coral_reef_conservation.jpg" alt="Coral reservation" class="home-card-image">
+                                <div class="home-card-overlay"></div>
+                                <div class="home-card-content">
+                                    
+                                    <div class="home-card-title">Coral Reef Conservation</div>
+                                    <div class="home-card-description">Discover efforts to protect and restore coral reefs.</div>
+                                    <a href="content_ST1.html" class="home-card-button">Dive deeper</a>
+                                    <div class="home-card-category">Student 1</div>
+                                </div>
+                        </div>
+                
+                    <div class="home-card">
+                        <img src="images/plastic_pollution.jpg" alt="plastics in ocean" class="home-card-image">
+                        <div class="home-card-overlay"></div>
+                        <div class="home-card-content">
+                            
+                            <div class="home-card-title">Plastic pollution</div>
+                            <div class="home-card-description">Understand the effects of plastic waste on marine ecosystems.</div>
+                            <a href="content_ST2.html" class="home-card-button">Dive deeper</a>
+                            <div class="home-card-category">Student 2</div>
+                        </div>
+                    </div>
+
+                    <div class="home-card">
+                        <img src= "images/ocean_pollution.jpg" alt="Ocean pollution" class="home-card-image">
+                        <div class="home-card-overlay"></div>
+                        <div class="home-card-content">
+                            
+                            <div class="home-card-title">ocean Pollution</div>
+                            <div class="home-card-description">Learn about the impact of pollution on marine life and ecosystems.</div>
+                            <a href="content_ST3.html" class="home-card-button">Dive deeper</a>
+                            <div class="home-card-category">Student 3</div>
+                        </div>
+                    </div>
+
+                    <div class="home-card"> <!--Student 4 content Page-->
+                        <img src="images/protect_marine_life.jpg" alt="Protecting marine life" class="home-card-image">
+                        <div class="home-card-overlay"></div>
+                        <div class="home-card-content">
+
+                            <div class="home-card-title">Protecting Marine Life</div>
+                            <div class="home-card-description">Learn about the importance of protecting marine species and habitats.</div>
+                            <a href="content_ST4.html" class="home-card-button">Dive deeper</a>
+                            <div class="home-card-category">Student 4</div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p class="top"><a href="#top">Go to top</a></p>
+            </main>
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="OceaVia Logo">
+                    </div>
+
+                    <div class="footer-about">
+                        <h3>About OceaVia</h3>
+                        <p>
+                            This website was created as part of a group coursework project to raise awareness about marine plastic pollution and support the goals of UN SDG 14: Life Below Water.
+                        </p>
+                    </div>
+
+                    <div class="footer-about">
+                        <h4>Page Editors</h4>
+                        <p>
+                            <a href="PageEditor_ST1.html">Student 1</a> |
+                            <a href="PageEditor_ST2.html">Student 2</a> |
+                            <a href="PageEditor_ST3.html">Student 3</a> |
+                            <a href="PageEditor_ST4.html">Student 4</a>
+                        </p>
+
+                        <h4>Content Pages</h4>
+                        <p>
+                            <a href="content_ST1.html">Content 1</a> |
+                            <a href="content_ST2.html">Content 2</a> |
+                            <a href="content_ST3.html">Content 3</a> |
+                            <a href="content_ST4.html">Content 4</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025 Team G4-Group3. All rights reserved.</p>
+                </div>
+            </footer>
+        </body>
+    </html>

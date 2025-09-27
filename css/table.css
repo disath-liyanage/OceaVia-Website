@@ -1,0 +1,139 @@
+.logo-img {
+    height: 100px; /* Adjusted height for better visibility */
+    margin-right: 10px; /* Space between logo and text */
+    vertical-align: middle; /* Aligns the logo vertically with text */
+}
+
+main h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #003049;
+    margin-top: 90px;
+    text-align: center;
+}
+
+table {
+    width: 95%; /* Sets the width of the table to 95% of the container */
+    margin: 40px auto; /* Centers the table on the page */
+    border-collapse: collapse; /* Merges table borders */
+    background-color: white; /* Sets background color to white */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Adds a subtle shadow for depth */
+    font-family: 'Segoe UI', sans-serif; /* Sets the font for the table */
+}
+
+.table-logo {
+    height: 60px; /* Sets height for the logo in the table */
+    display: block; /* Makes it a block element */
+    margin: auto; /* Centers the logo */
+    padding: 10px 0; /* Adds padding for spacing */
+}
+
+tbody td:nth-child(even),
+thead th:nth-child(even) {
+    background-color: #f0f0f0; /* Light grey background for even columns */
+}
+
+tbody td:nth-child(odd),
+thead th:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd columns */
+}
+
+thead th {
+    background-color: #003049 !important; /* Dark blue background for table header  and making it important*/
+    color: white; /* Sets text color to white for contrast */
+    padding: 16px; /* Adds padding for better spacing */
+    font-size: 16px; /* Sets font size for header */
+    font-weight: 600; /* Makes header text bold */
+    vertical-align: middle; /* Vertically aligns header text */
+}
+
+thead th[colspan] {
+    background-color: #00243a !important; /* Darker blue for colspan header */
+}
+
+tbody td {
+    padding: 14px; /* Adds padding for table body cells */
+    text-align: center; /* Centers text in table cells */
+    font-size: 15px; /* Sets font size for table body */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+tbody tr {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wheale{
+    font-family: arial;
+    font-weight: bold;
+}
+
+.index-icon {
+    width: 32px; /* Sets width for index icon */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Makes it a block element */
+    margin: auto; /* Centers the icon */
+}
+
+.risk-badge {
+    display: inline-block; /* Makes it an inline block for better layout */
+    padding: 6px 14px; /* Adds padding for spacing */
+    border-radius: 20px; /* Rounds the corners */
+    font-weight: bold; /* Makes text bold */
+    color: white; /* Sets text color to white */
+    text-transform: uppercase; /* Transforms text to uppercase */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.endangered .risk-badge {
+    background-color: #cc1c2e; /* Red for endangered species */
+}
+
+.critical .risk-badge {
+    background-color: #ff0000; /* Dark red for critical species */
+}
+.vulnerable .risk-badge {
+    background-color: #e28f09; /* Orange for vulnerable species */
+    color: #2e2e2e; /* Dark text for contrast */
+}
+
+.near .risk-badge {
+    background-color: #13b649; /* Grey for unknown risk */
+}
+
+tbody tr:hover {
+    transform: translateY(-6px); /* Moves the row up slightly on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75); /* Adds a shadow for depth */
+    font-weight: bold; /* Makes text bold on hover */
+    z-index: 1;
+    position: relative;
+}
+
+tbody tr:hover td {
+    background-color: inherit !important; /* Keeps the background color consistent on hover */
+}
+
+tbody tr.critical:hover td {
+    background-color: #ff0000 !important; /* Bright red for critical species on hover */
+    color: white;
+}
+
+tbody tr.endangered:hover td {
+    background-color: #cc1c2e !important; /* Dark red for endangered species on hover */
+    color: white;
+}
+
+tbody tr.vulnerable:hover td {
+    background-color: #e28f09 !important; /* Orange for vulnerable species on hover */
+    color: #2e2e2e;
+}
+
+tbody tr.near:hover td {
+    background-color: #13b649 !important; /* Grey for near threatened species on hover */
+    color: white;
+}
+
+
+tbody tr:hover .risk-badge {
+    background: none; /* Removes background on hover for risk badge */
+    color: inherit; /* Keeps text color consistent with the row */
+}

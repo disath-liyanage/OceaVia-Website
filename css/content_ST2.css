@@ -1,0 +1,266 @@
+*{ box-sizing: border-box; } /*Ensures padding and border are included in the elements total width and height*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #3a6ea5, #6ba0ff); /*Create a gradient background*/
+    color: #1c2c4c; /*Set a dark text color*/
+    min-height: 100vh; /*Ensure the body covers the full viewport height*/
+    display: flex; /*Allows the content and sidebar to be aligned side by side*/
+    flex-direction: column; /*Stack elements vertically*/
+    scroll-behavior: smooth; /*Smooth scrolling for better user experience*/
+}
+
+a {
+    color: #1a4a8e; /*Set a specific color for links*/
+    text-decoration: none; /*Remove underline from links*/
+    transition: color 0.3s ease; /*Smooth transition for color change on hover*/
+}
+
+a:hover, a:focus {
+    color: #0f2a5b; /*Change link color on hover or focus*/
+    text-decoration: underline; /*Underline links on hover or focus for better visibility*/
+    outline: none; /*Remove default outline for better aesthetics*/
+}
+
+nav.sidebar {
+    position: fixed; /*Fix the sidebar to the left side of the viewport*/
+    top: 88px; /*Align the sidebar to the top of the viewport while keeping a space to header*/
+    left:0; /*Align the sidebar to the left edge of the viewport*/
+    width: 280px; /*Set a fixed width for the sidebar*/
+    height: 100vh; /*Ensure the sidebar covers the full viewport height*/
+    background: #0f2a5b; /*Set a solid background color for the sidebar*/
+    color: white; /*Set the text color to white for better contrast*/
+    padding: 30px 20px; /*Add padding inside the sidebar for spacing*/
+    overflow-y: auto; /*Allow vertical scrolling if content overflows*/
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3); /*Add a subtle shadow to the sidebar for depth*/
+    font-weight: 600; /*Make the sidebar text bold for emphasis*/
+    user-select: none; /*Prevent text selection in the sidebar for better usability*/
+}
+
+nav.sidebar h2 {
+    margin-top: 0; /*Remove top margin for the sidebar heading*/
+    font-size: 1.8rem; /*Set a larger font size for the sidebar heading*/
+    margin-bottom: 30px; /*Add space below the heading*/
+    border-bottom: 2px solid #1e4d9e; /*Add a border below the heading for separation*/
+    padding-bottom: 10px; /*Add padding below the heading for spacing*/
+    letter-spacing: 0.03px; /*Increase letter spacing for better readability*/
+}
+
+nav.sidebar ul {
+    list-style: none; /*Remove default bullet points from the unordered lists inside <nav> with the class 'sidebar'*/
+    padding: 0; /*Remove default padding from the list*/
+    margin: 0; /*Remove default margin from the list*/
+}
+
+nav.sidebar ul li {
+    margin-bottom: 20px; /*Add space between list items*/
+}
+
+nav.sidebar ul li a {
+    color: #c8d6f9; /*Set a light color for links in the sidebar*/
+    font-size: 1.1rem; /*Set a larger font size for better readability*/
+    display: block; /*Make the link a block element to fill the width of the sidebar*/
+    padding: 6px 10px; /*Add padding around the link for better clickability*/
+    border-radius: 6px; /*Round the corners of the link for a softer look*/
+    transition: background-color 0.25s ease, color 0.25s ease; /*Smooth transition for background color change on hover*/
+}
+
+nav.sidebar ul li a:hover, 
+nav.sidebar ul li a:focus, 
+nav.sidebar ul li a.active {
+    background-color: #295bbf; /*Change background color on hover for better visibility*/
+    color: white; /*Change text color to white on hover for contrast*/
+    outline: none; /*Remove default outline for better aesthetics*/
+    box-shadow: 0 0 6px #295bbf99; /*Add a subtle glow effect on hover for emphasis*/
+}
+
+main.content {
+    margin-left: 300px; /*Leave space for the sidebar on the left*/
+    background: white; /*Set a white background for the main content area*/
+    border-radius: 14px; /*Round the corners of the main content area for a softer look*/
+    padding: 40px 50px; /*Add padding inside the main content area for spacing*/
+    margin-top: 89px; /*Align the main content below the header*/
+    margin-bottom: 20px; /*Add space below the main content area*/
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); /*Add a shadow for depth*/
+    max-width: 76.5%; /*Set a maximum width for the main content area*/
+    flex-grow: 1; /*Allow the main content area to grow and fill available space*/
+}
+
+main.content h1 {
+    font-size: 2.8rem; /*Set a larger font size for the main heading*/
+    margin-bottom: 5px; /*Add space below the main heading*/
+    color: #1a3d82; /*Set a dark color for the main heading*/
+    font-weight: 700; /*Make the main heading bold for emphasis*/
+}
+
+main.content h2{
+    font-size: 2rem; /*Set a slightly smaller font size for subheadings*/
+    margin-top: 60px; /*Add space above subheadings*/
+    margin-bottom: 20px; /*Add space below subheadings*/
+    color: #1a3d82; /*Set a dark color for subheading 2*/
+    border-bottom: 2px solid #6ba0ff; /*Add a border below subheadings for separation*/
+    padding-bottom: 8px; /*Add padding below subheadings for spacing*/
+}
+
+main.content h3 {
+    font-size: 1.4rem; /*Set a smaller font size for sub-subheadings*/
+    margin-top: 40px; /*Add space above sub-subheadings*/
+    margin-bottom: 15px; /*Add space below sub-subheadings*/
+    color: #295bbf; /*Set a dark color for sub-subheading 3*/
+}
+
+p {
+    line-height: 1.65; /*Set line height for better readability*/
+    font-size: 1.05rem; /*Set a standard font size for paragraphs*/
+    margin-bottom: 18px; /*Add space below paragraphs*/
+    color: #334b7b; /*Set a dark color for paragraph text*/
+}
+
+ul {
+    margin-left: 22px; /*Add space to the left of unordered lists*/
+    margin-bottom: 18px; /*Add space below unordered lists*/
+    font-size: 1rem; /*Set a standard font size for unordered lists*/
+    color: #3e567d; /*Set a dark color for unordered list items*/
+}
+
+ul li {
+    margin-bottom: 8px; /*Add space between list items*/
+}
+
+figure {
+    margin: 30px 0; /*Add space above and below figures*/
+    text-align: center; /*Center align figures*/
+    overflow: hidden; /*Hide overflow for better aesthetics*/
+    border-radius: 12px; /*Round the corners of figures for a softer look*/
+    box-shadow: 0 6px 18px rgb(0 0 0/ 0.8); /*Add a shadow for depth*/
+}
+
+figure:hover {
+    transform: scale(1.05); /*Scale up the figure on hover for emphasis*/
+    box-shadow: 0 10px 30px rgb(0 0 0/ 0.18); /*Increase shadow on hover for depth*/
+}
+
+figure img {
+    max-width: 100%; /*Ensure images do not exceed the width of their container*/
+    height: auto; /*Maintain aspect ratio of images*/
+    display: block; /*Make images block elements to avoid inline spacing issues*/
+    border-radius: 12px; /*Round the corners of images for a softer look*/
+}
+
+figcaption {
+    margin-top: 8px; /*Add space above the caption*/
+    font-style: italic; /*Italicize the caption text for emphasis*/
+    font-size: 0.9rem; /*Set a smaller font size for the caption*/
+    color: #647aaf; /*Set a lighter color for the caption text*/
+    user-select: none; /*Prevent text selection in the caption for better usability*/
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /*Remove space between table cells*/
+    margin: 35px 0; /*Add space above and below the table*/
+    font-size: 1rem; /*Set a standard font size for table text*/
+    color: #334b7b; /*Set a dark color for table text*/
+}
+
+    table th {
+    background: linear-gradient(90deg, #1a3d82, #6ba0ff); /*Set a gradient background for table headers*/
+    color: white; /*Set text color to white for contrast*/
+    padding: 14px 12px; /*Add padding inside table headers for spacing*/
+    text-align: center; /*Center align table headers*/
+    font-weight: 700; /*Make table headers bold for emphasis*/
+}
+
+tbody tr:hover {
+    cursor: pointer; /*Change cursor to pointer on hover for better interactivity*/
+    background-color: #e2f0ff; /*Change background color of table rows on hover for better visibility*/
+    font-weight: 500; /*Set font weight to ligh bold on hover for better readability*/
+}
+
+th, td {
+    padding: 12px 14px; /*Add padding inside table cells for spacing*/
+    border-bottom: 1px solid #c1d3f0; /*Add a bottom border to table cells for separation*/
+}
+
+.stats-grid {
+    display: grid; /*Use CSS Grid for layout*/
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /*Create responsive columns that fit the available space*/
+    gap: 20px; /*Add space between grid items*/
+    margin: 30px 0 50px 0; /*Add space above and below the grid*/
+}
+
+.stat {
+    background: #d9e8ff; /*Set a light background color for stat boxes*/
+    padding: 25px; /*Add padding inside stat boxes for spacing*/
+    border-radius: 12px; /*Round the corners of stat boxes for a softer look*/
+    box-shadow: 0 4px 14px rgb(0 0 0 / 0.1); /*Add a shadow for depth*/
+    text-align: center; /*Center align text inside stat boxes*/
+    transition: background-color 0.3s ease; /*Smooth transition for background color change on hover*/
+    user-select: none; /*Prevent text selection in stat boxes for better usability*/
+}
+
+.stat:hover {
+    background: #aec9ff; /*Change background color on hover for better visibility*/
+}
+
+.stat h3 {
+    margin: 0; /*Remove default margin for stat headings*/
+    font-size: 2.4rem; /*Set a larger font size for stat headings*/
+    font-weight: 700; /*Make stat headings bold for emphasis*/
+    color: #1a3d82; /*Set a dark color for stat headings*/
+}
+
+.stat p {
+    margin-top: 10px; /*Add space above the paragraph inside stat boxes*/
+    font-weight: 600; /*Set a standard font size for paragraphs inside stat boxes*/
+    color: #335a9e; /*Set a dark color for paragraph text inside stat boxes*/
+}
+
+@media (max-width: 900px) {
+    body {flex-direction: column;}
+    nav.sidebar {
+        position: relative; /*Change position to relative for better responsiveness*/
+        width: 100%; /*Set the sidebar width to 100% for smaller screens*/
+        height: auto; /*Allow the sidebar to adjust its height based on content*/
+        padding: 20px 15px; /*Reduce padding for smaller screens*/
+        box-shadow: none; /*Remove shadow for a cleaner look on smaller screens*/
+        display: flex; /*Use flexbox for layout on smaller screens*/
+        overflow-x: auto; /*Allow horizontal scrolling if content overflows*/
+        white-space: nowrap; /*Prevent line breaks in sidebar links*/
+    }
+
+    nav.sidebar h2 { display: none; } /*Hide the sidebar heading on smaller screens*/
+    nav.sidebar ul {
+        display: flex; /*Use flexbox for layout on smaller screens*/
+        gap: 20px; /*Use flexbox for layout and add space between links*/
+    }
+
+    nav.sidebar ul li { margin: 0; } /* Remove margin from list items on smaller screens */
+    nav.sidebar ul li a {
+        padding: 10px 16px; /*Adjust padding for smaller screens*/
+        font-size: 1rem; /*Set a smaller font size for links on smaller screens*/
+        white-space: nowrap; /*Prevent line breaks in sidebar links*/
+        border-radius: 12px; /*Round the corners of links for a softer look*/
+    }
+
+    main.content {
+        margin: 20px 20px 60px 20px; /*Adjust margins for the main content area on smaller screens*/
+        max-width: 100%; /*Set the maximum width to 100% for smaller screens*/
+        border-radius: 12px; /*Round the corners of the main content area for a softer look*/
+        padding: 25px 20px; /*Reduce padding for smaller screens*/
+    }
+}
+
+section {
+    opacity: 0; /*Set initial opacity to 0 for fade-in effect*/
+    transform: translateY(20px); /*Set initial position for fade-in effect*/
+    transition: opacity 0.6s ease, transform 0.6s ease; /*Smooth transition for fade-in effect*/
+}
+
+section.visible {
+    opacity: 1; /*Set opacity to 1 when the section is visible*/
+    transform: translateY(0); /*Reset position when the section is visible*/
+}

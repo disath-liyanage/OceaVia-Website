@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator Page - Disath Liyanage</title>
+    <link rel="icon" type="image/png" href="images/No-text-logo.png">
+	<link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> 
+
+</head>
+<body>
+    <div id="top"></div>
+    <header class="navbar">
+        <div class="logo" onclick="window.location.href='home.html'">
+            <img src="images/logo.png" alt="OceaVia logo">
+        </div>
+        <nav> <!--Navigation bar-->
+            <a href="table.html">Data</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">SiteMap</a>
+            <a href="team.html">Team</a>
+            <button class="profile-btn" onclick="window.location.href='profile.html';">Profile</button>
+        </nav> <!--Closing the navigation bar-->
+    </header>
+
+    <section class="stud">
+        <h2>Disath Liyanage, Student Role 02</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update the content of the following sections with the information that corresponds to the pages you implemented  -->
+
+            <section>
+                <h2 id="homeVal">Home Page validation report</h2>
+                    <p>After running the pages I implemented through an HTML validator, I noticed a few syntax issues—specifically the use of self-closing slashes (<code>/</code>) in tags like <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code>, and <code>&lt;img&gt;</code>, which are not required in HTML5. The validator also highlighted an incorrect MIME type <code>images/png</code>, which I corrected to <code>image/png</code>. Based on this feedback, I updated the code to align with HTML5 standards.</p> 
+                    <img src="images/validation_ST2/home_page_validation.png">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="PageEditor_ST2.html#home">Link to the Editor page.</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section>
+
+            <section>
+                <h2 id="tableVal">Table Page validation report</h2>
+                <p>When validating the HTML code for the Table page, the only issue highlighted was the unnecessary use of self-closing slashes (<code>/</code>) on <code>&lt;img&gt;</code> tags. Since the project uses HTML5, these slashes are not required and can be safely removed. After identifying this through the validator, I updated the <code>&lt;img&gt;</code> elements by removing the <code>/</code> at the end. This brought the code in line with HTML5 standards.</p>
+                    <img src="images/validation_ST2/table_page_validation.png">
+                                    
+                <h3>Content Page Editor page</h3>
+                    <p><a href="PageEditor_ST2.html#table">Link to the page editor.</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section></a></p>
+
+            <section>
+                <h2 id="content_2Val">Content Page validation report</h2>
+                <p>After validating the <code>content_ST2.html</code> page using the W3C HTML Validator, I found that there were no errors or warnings. This confirmed that the HTML structure, syntax, and tag usage were fully compliant with HTML5 standards. All elements, including semantic tags, metadata, image handling, and navigation structure, were implemented correctly.</p>
+                    <img src="images/validation_ST2/content_ST2_page_validation.png">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="PageEditor_ST2.html#content">Link to the page editor.</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section></a></p>
+
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splashVal">Splash page validation</a></li>
+                        <li><a href="#volunteerVal">Volunteer page validation</a></li>
+                        <li><a href="#contentVal">Content page validation</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#homeVal">Home page </a></li>
+                        <li><a href="#tableVal">Table page</a></li>
+                        <li><a href="#content_2Val">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#">Feedback page</a> </li>
+                        <li><a href="#">Team page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#">Profile page </a></li>
+                        <li><a href="#">Sitemap page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+            </ul>
+        </aside>
+    </div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="OceaVia Logo"/>
+        </div>
+
+        <div class="footer-about">
+            <h3>About OceaVia</h3>
+            <p>
+                This website was created as part of a group coursework project to raise awareness about marine plastic pollution and support the goals of UN SDG 14: Life Below Water.
+            </p>
+        </div>
+
+        <div class="footer-about">
+            <h4>Page Editors</h4>
+            <p>
+                <a href="PageEditor_ST2.html">Student 2</a>
+            </p>
+
+            <h4>Content Pages</h4>
+            <p>
+                <a href="content_ST2.html">Content 2</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Team G4-Group3. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

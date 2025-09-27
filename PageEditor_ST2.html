@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor - Disath Liyanage</title>
+    <link rel="icon" type="icon/png" href="images/No-text-logo.png">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> 
+
+</head>
+<body>
+	<div id="top"></div>
+    <header class="navbar">
+        <div class="logo" onclick="window.location.href='home.html'">
+            <img src="images/logo.png" alt="OceaVia logo">
+        </div>
+        <nav> <!--Navigation bar-->
+            <a href="table.html">Data</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">SiteMap</a>
+            <a href="team.html">Team</a>
+            <button class="profile-btn" onclick="window.location.href='profile.html';">Profile</button>
+        </nav> <!--Closing the navigation bar-->
+    </header>
+
+    <section class="stud">
+        <h2>Disath Liyanage, Student Role 02</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+    <section>
+        <h2 id="homeVal">Home Page</h2>
+
+        <h3>Technical Description</h3>
+        <p>
+            The OceaVia Home Page is structured using semantic HTML5 elements such as 
+            <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;main&gt;</code>, and 
+            <code>&lt;footer&gt;</code> for clear layout and improved accessibility. A full-screen 
+            background video is implemented using the <code>&lt;video&gt;</code> element with 
+            <code>autoplay</code>, <code>loop</code>, and <code>muted</code> attributes to ensure a smooth, 
+            silent visual introduction without interrupting users. Overlaying text and buttons 
+            (<code>.hero-overlay-content</code>) are positioned using Flexbox and enhanced with 
+            background gradients, <code>-webkit-background-clip</code>, and <code>text-fill-color</code> for 
+            aesthetic appeal.
+        </p>
+
+        <p>
+            The mission section uses an <code>&lt;h1&gt;</code> heading followed by multiple 
+            <code>&lt;p&gt;</code> tags, styled with consistent font sizing, padding, and line height for 
+            readability. The “Explore More” section uses a CSS grid layout via 
+            <code>display: grid</code> and <code>grid-template-columns</code> to create a responsive card 
+            layout. Each card is built with a combination of <code>&lt;img&gt;</code>, <code>&lt;div&gt;</code>, 
+            and <code>&lt;a&gt;</code> elements, styled to include hover effects such as 
+            <code>transform: scale()</code>, <code>filter: brightness()</code>, and shadow effects for interactivity.
+        </p>
+
+        <p>
+            The navigation bar uses Flexbox for horizontal alignment and is fixed using 
+            <code>position: fixed</code> to keep it always visible. Reusable utility classes and global 
+            CSS are applied for consistent spacing and typography across the page.
+        </p>
+
+        <h4>Key HTML tags used:</h4>
+        <ul>
+            <li><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code> – for semantic page structure</li>
+            <li><code>&lt;video&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;a&gt;</code> – for media display and content interaction</li>
+            <li><code>&lt;div&gt;</code> – for grouping and styling layout elements</li>
+        </ul>
+
+        <h4>Key CSS properties used:</h4>
+        <ul>
+            <li><code>display: flex</code>, <code>justify-content</code>, <code>align-items</code> – for alignment in navbar and hero section</li>
+            <li><code>display: grid</code>, <code>grid-template-columns</code> – for responsive card layout</li>
+            <li><code>position: absolute</code>, <code>fixed</code>, <code>relative</code>, <code>z-index</code> – for layering and fixed elements</li>
+            <li><code>object-fit: cover</code> – to scale video/image without distortion</li>
+            <li><code>text-shadow</code>, <code>box-shadow</code>, <code>transform</code>, <code>transition</code> – to enhance hover effects and animations</li>
+            <li><code>@media queries</code> – to ensure mobile responsiveness</li>
+        </ul>
+
+        <h3>Accessibility</h3>
+        <p>
+            Accessibility is addressed through descriptive <code>alt</code> attributes on all 
+            <code>&lt;img&gt;</code> elements, including logos and cards. The video uses 
+            <code>muted</code>, <code>playsinline</code>, and fallback text to accommodate assistive 
+            technologies. Color contrast is optimized using light text on dark or video backgrounds with 
+            shadow support for legibility. The use of semantic tags like <code>&lt;header&gt;</code>, 
+            <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> improves document structure for 
+            screen readers. All interactive elements are accessible using keyboard navigation.
+        </p>
+
+        <h3>Link to the validation page</h3>
+        <p><a href="validation_ST2.html#homeVal">Link to the Validation Page</a></p>
+
+        <h3>Link to the page</h3>
+        <p><a href="home.html">Link to the Home Page</a></p>
+    </section>
+
+
+    <section>
+        <h2 id="tableVal">Table Page</h2>
+
+        <h3>Technical Description</h3>
+        <p>
+            The OceaVia Table Page presents a clean, responsive, and data-focused interface showcasing 
+            information about threatened marine species. It uses semantic HTML5 elements including 
+            <code>&lt;main&gt;</code>, <code>&lt;table&gt;</code>, and <code>&lt;thead&gt;</code>/<code>&lt;tbody&gt;</code> 
+            to structure tabular content. A custom-designed table layout visually organizes species data by risk 
+            level, region, and related action links.
+        </p>
+
+        <p>
+            The table header uses rowspan and colspan attributes to align content neatly across multiple columns. 
+            Each row uses a unique class such as <code>.critical</code>, <code>.endangered</code>, 
+            <code>.vulnerable</code>, and <code>.near</code> to dynamically apply background colors and badges 
+            based on risk level. Hover effects are added to table rows using <code>transform</code> and 
+            <code>box-shadow</code> for interactive depth.
+        </p>
+
+        <p>
+            Table responsiveness is enhanced by limiting the width to 95% and centering it using margin auto. 
+            Semantic headings and spacing ensure clean readability. The navigation bar and footer follow the same 
+            global style as the rest of the site, ensuring visual and structural consistency.
+        </p>
+
+        <h4>Key HTML tags used:</h4>
+        <ul>
+            <li><code>&lt;main&gt;</code>, <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code> – for structured tabular content</li>
+            <li><code>&lt;img&gt;</code>, <code>&lt;a&gt;</code> – for species icons and external links</li>
+            <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> – for consistent layout</li>
+        </ul>
+
+        <h4>Key CSS properties used:</h4>
+        <ul>
+            <li><code>border-collapse</code>, <code>padding</code>, <code>text-align</code> – to enhance table presentation</li>
+            <li><code>box-shadow</code>, <code>transform</code>, <code>transition</code> – for row hover animations</li>
+            <li><code>background-color</code> – used with specific row classes to indicate risk level</li>
+            <li><code>display: block</code>, <code>margin: auto</code> – for centering logos and icons</li>
+        </ul>
+
+        <h3>Accessibility</h3>
+        <p>
+            The table page includes descriptive <code>alt</code> text for all image elements, including species 
+            logos and icons, to support screen readers. Color-coded rows are paired with bold text and 
+            uppercase badges to improve visual clarity and contrast. All external links open in a new tab using 
+            <code>target="_blank"</code>, and semantic HTML ensures assistive technologies can interpret the 
+            document structure accurately.
+        </p>
+
+        <h3>Link to the validation page</h3>
+        <p><a href="validation_ST2.html#tableVal">Link to the Validation Page</a></p>
+
+        <h3>Link to the page</h3>
+        <p><a href="table.html">Link to the Table Page</a></p>
+    </section>
+    <section>
+        <h2 id="content_2Val">Content Page – Marine Plastic Pollution</h2>
+
+        <h3>Technical Description</h3>
+        <p>
+            The Content Page on Marine Plastic Pollution is designed as a comprehensive, visually engaging, and 
+            accessible layout. It uses semantic HTML5 structure elements including 
+            <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;figure&gt;</code>, and 
+            <code>&lt;table&gt;</code> to present researched data in a structured and readable format. 
+            The layout includes a fixed-position sidebar for internal navigation and a scroll-activated section reveal 
+            animation, enhancing both usability and engagement.
+        </p>
+
+        <p>
+            The sidebar navigation uses a <code>nav</code> element with anchor links, highlighting the current 
+            section dynamically with JavaScript based on scroll position. Each content section is tagged with an 
+            <code>id</code> to enable smooth anchor-based navigation and is revealed with a fade-in animation 
+            triggered by scroll events using <code>classList.add('visible')</code>.
+        </p>
+
+        <p>
+            The page follows a content-rich design, with scroll-behavior smoothness and hover interactions on 
+            figures and table rows. Data is represented using a responsive <code>&lt;table&gt;</code> for environmental 
+            impacts and a <code>.stats-grid</code> CSS Grid layout for key statistics. This approach offers a 
+            balance between text and visual content, optimized for comprehension and interaction.
+        </p>
+
+        <h4>Key HTML tags used:</h4>
+        <ul>
+            <li><code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;table&gt;</code>, <code>&lt;figure&gt;</code> – to organize content and data visually</li>
+            <li><code>&lt;img&gt;</code>, <code>&lt;figcaption&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code> – to enhance accessibility and structure</li>
+            <li><code>&lt;nav&gt;</code> (with <code>aria-label</code>) – for accessible navigation</li>
+            <li><code>&lt;footer&gt;</code> – to maintain consistent branding and link back to editor and validation pages</li>
+        </ul>
+
+        <h4>Key CSS properties used:</h4>
+        <ul>
+            <li><code>display: flex</code>, <code>grid-template-columns</code>, <code>max-width</code> – for responsive page and content layout</li>
+            <li><code>background</code>, <code>box-shadow</code>, <code>border-radius</code> – for polished, modern visual aesthetics</li>
+            <li><code>scroll-behavior: smooth</code>, <code>transform</code>, <code>transition</code> – for scroll animations and hover effects</li>
+            <li><code>@media</code> queries – for mobile responsiveness (e.g., sidebar layout adapts on smaller screens)</li>
+        </ul>
+
+        <h3>Accessibility</h3>
+        <p>
+            The page adheres to accessibility best practices by providing meaningful <code>alt</code> attributes 
+            for all images, using semantic landmarks such as <code>&lt;main&gt;</code> and <code>&lt;nav&gt;</code>, 
+            and maintaining high contrast in text and links. Sidebar navigation includes an 
+            <code>aria-label</code> for screen readers. Section headings are properly ordered to allow assistive 
+            technologies to parse the document effectively. Link hover states are visually enhanced for clarity.
+        </p>
+
+        <h3>Link to the validation page</h3>
+        <p><a href="validation_ST2.html#content_2Val">Link to the Validation Page</a></p>
+
+        <h3>Link to the page</h3>
+        <p><a href="content_ST2.html">Link to the Content Page</a></p>
+    </section>
+
+    <section>
+        <h2 id="challenge">Challenges and Lessons Learned</h2>
+        <p>
+            One of the key challenges during this project was ensuring that the content layout remained visually consistent across different screen sizes. Initially, some sections appeared misaligned or overlapped on smaller devices, which required revisiting our CSS structure and applying media queries more effectively.
+        </p>
+        <p>
+            Another issue we faced was achieving smooth internal navigation with a fixed sidebar and header. The anchor links didn’t scroll to the correct positions due to fixed element heights. This was resolved by using <code>scroll-padding-top</code> in CSS and testing across various browsers.
+        </p>
+        <p>
+            Through these challenges, we learned the importance of planning for responsiveness from the beginning and thoroughly testing navigation and layout features. We also gained a deeper understanding of combining semantic HTML with modern CSS techniques to enhance both usability and accessibility.
+        </p>
+    </section>
+    <section>
+        <h2 id="compliance">Compliance</h2>
+        <p>
+            All pages created for this website follow the Janet acceptable use policies and guidelines for academic web publishing. Content is appropriate for an educational setting, with no offensive, misleading, or commercial material.
+        </p>
+        <p>
+            Images used are either sourced from royalty-free platforms or designed specifically for the project. Each image includes descriptive <code>alt</code> text to support accessibility for screen readers, meeting WCAG standards. External links open in a new tab using <code>target="_blank"</code> and are clearly labeled to avoid confusion.
+        </p>
+        <p>
+            The website uses semantic HTML5 and CSS to improve accessibility, navigation, and compatibility across devices. No copyrighted or unlicensed media is included, and all content is student-generated or properly referenced. This ensures that the site remains respectful of intellectual property and suitable for hosting on an academic network.
+        </p>
+    </section>
+    <section>
+        <h2 id="ref">References</h2>
+        <p>Below are the sources referenced throughout the content, formatted in a simplified Harvard style:</p>
+        <ul class="ref">
+            <li>United Nations Environment Programme (UNEP) (2023) <i>Pollution to Solution: Global Assessment of Marine Litter and Plastic Pollution.</i> Available at: <a href="https://www.unep.org/resources/pollution-solution-global-assessment-marine-litter-and-plastic-pollution" target="_blank">https://www.unep.org/resources/pollution-solution-global-assessment-marine-litter-and-plastic-pollution</a> (Accessed: 5 Jul. 2025).</li>
+
+            <li>International Union for Conservation of Nature (IUCN) (2024) <i>Marine Plastic Pollution – Issues Brief.</i> Available at: <a href="https://iucn.org/sites/default/files/2024-04/marine-plastic-pollution-issues-brief_nov21-april-2024-small-update_0.pdf" target="_blank">https://iucn.org/.../marine-plastic-pollution-issues-brief</a> (Accessed: 5 Jul. 2025).</li>
+
+            <li>ScienceDirect (2020) <i>Plastic pollution in the marine environment: Sources and impacts.</i> Available at: <a href="https://www.sciencedirect.com/science/article/pii/S2405844020315528" target="_blank">https://www.sciencedirect.com/science/article/pii/S2405844020315528</a> (Accessed: 5 Jul. 2025).</li>
+
+            <li>UNEP (2022) <i>Intergovernmental Negotiating Committee on Plastic Pollution.</i> Available at: <a href="https://www.unep.org/inc-plastic-pollution" target="_blank">https://www.unep.org/inc-plastic-pollution</a> (Accessed: 5 Jul. 2025).</li>
+
+            <li>United Nations Environment Assembly (UNEA) (2022) <i>Resolution 5/14: End plastic pollution – Towards an international legally binding instrument.</i> Available at: <a href="https://www.unep.org/events/unep-event/unea-5" target="_blank">https://www.unep.org/events/unep-event/unea-5</a> (Accessed: 5 Jul. 2025).</li>
+
+            <li>National Oceanic and Atmospheric Administration (NOAA) (2023) <i>Marine Debris Program.</i> Available at: <a href="https://marinedebris.noaa.gov" target="_blank">https://marinedebris.noaa.gov</a> (Accessed: 5 Jul. 2025).</li>
+
+            <li>European Environment Agency (EEA) (2021) <i>Plastics, the circular economy and Europe′s environment — A priority for action.</i> Available at: <a href="https://www.eea.europa.eu/publications/plastics-the-circular-economy-and" target="_blank">https://www.eea.europa.eu/.../plastics-the-circular-economy-and</a> (Accessed: 5 Jul. 2025).</li>
+
+            <li>OECD (2022) <i>Global Plastics Outlook: Policy Scenarios to 2060.</i> Available at: <a href="https://www.oecd.org/environment/global-plastics-outlook-policy-scenarios-to-2060-9789264301016-en.htm" target="_blank">https://www.oecd.org/.../global-plastics-outlook-policy-scenarios</a> (Accessed: 5 Jul. 2025).</li>
+        </ul>
+    </section>
+
+            <p class="top"> <a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#homeVal">Home page </a></li>
+                        <li><a href="#tableVal">Table page</a></li>
+                        <li><a href="#content_2Val">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="OceaVia Logo"/>
+            </div>
+
+            <div class="footer-about">
+                <h3>About OceaVia</h3>
+                <p>
+                    This website was created as part of a group coursework project to raise awareness about marine plastic pollution and support the goals of UN SDG 14: Life Below Water.
+                </p>
+            </div>
+
+            <div class="footer-about">
+                <h4>Page Editors</h4>
+                <p>
+                    <a href="PageEditor_ST2.html">Student 2</a>
+                </p>
+
+                <h4>Content Pages</h4>
+                <p>
+                    <a href="content_ST2.html">Content 2</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Team G4-Group3. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
